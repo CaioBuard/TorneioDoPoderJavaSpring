@@ -9,7 +9,7 @@ import jakarta.persistence.Id;
 public class Lutador {
 	
 	@Id	
-	// @GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private long id; 
 	private int ki;
 	private float peso;
@@ -27,6 +27,10 @@ public class Lutador {
 		this.estamina = estamina;
 		this.nome = nome;
 		this.inscricao = inscricao;
+	}
+
+	public Lutador() {
+		super();
 	}
 
 	public long getId() {

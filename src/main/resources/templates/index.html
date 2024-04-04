@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torneio do Poder</title>
+</head>
+<body>
+	
+	<h1>Bem-vindo ao Torneio do Poder!!!</h1>
+	
+	<h3>Lutadores Confirmados:</h3>
+	
+	<tr th:each ="lutador : ${lutadores}" >
+		<span th:text = "${lutador.nome}"></span>
+		<span th:text = "${lutador.ki}"></span>
+		<p></p>
+	</tr>
+	
+	<a href="http://localhost:8080/cadastro">Cadastre um novo lutador</a>
+
+    
+</body>
+</html>

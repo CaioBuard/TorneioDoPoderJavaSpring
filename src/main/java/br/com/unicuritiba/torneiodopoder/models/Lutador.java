@@ -9,7 +9,7 @@ import jakarta.persistence.Id;
 public class Lutador {
 	
 	@Id	
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy=GenerationType.SEQUENCE)
 	private long id; 
 	private int ki;
 	private float peso;
